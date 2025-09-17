@@ -16,10 +16,6 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       background: #0a0a0a;
       color: #fff;
@@ -28,7 +24,7 @@
 
     header {
       background: rgba(0, 0, 0, 0.85);
-      padding: 15px 30px;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -37,24 +33,22 @@
       top: 0;
       z-index: 1000;
       border-bottom: 1px solid rgba(241, 196, 15, 0.3);
-      backdrop-filter: blur(6px);
-      transition: 0.3s;
     }
 
     header h1 {
-      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      font-size: 1.8rem;
       font-weight: 700;
       color: #f1c40f;
     }
 
     header p {
-      font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+      font-size: 0.9rem;
       color: #ccc;
       margin-top: 2px;
     }
 
     nav a {
-      margin-left: 20px;
+      margin-left: 25px;
       text-decoration: none;
       color: #fff;
       font-weight: 500;
@@ -66,21 +60,20 @@
     }
 
     .hero {
-      min-height: 90vh;
+      height: 100vh;
       background: url("C:/Users/dhars/Downloads/shifa bg.jpg") no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       position: relative;
-      padding: 0 20px;
     }
 
     .hero::after {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
     }
 
     .hero-content {
@@ -88,31 +81,24 @@
       z-index: 1;
       max-width: 900px;
       padding: 20px;
-      animation: fadeIn 1.5s ease forwards;
-      opacity: 0;
     }
 
     .hero-content h1 {
-      font-size: clamp(2rem, 6vw, 3rem);
+      font-size: 3rem;
       font-weight: 700;
       margin-bottom: 15px;
     }
 
     .hero-content h2 {
-      font-size: clamp(1rem, 4vw, 1.5rem);
+      font-size: 1.5rem;
       font-weight: 500;
       color: #f1c40f;
       margin-bottom: 20px;
     }
 
     .hero-content p {
-      font-size: clamp(0.9rem, 3vw, 1.1rem);
+      font-size: 1.1rem;
       color: #ddd;
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
-      from { opacity: 0; transform: translateY(20px); }
     }
 
     .section {
@@ -121,7 +107,7 @@
     }
 
     .section h2 {
-      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-size: 2.2rem;
       margin-bottom: 20px;
       color: #f1c40f;
     }
@@ -129,9 +115,8 @@
     .section p {
       max-width: 800px;
       margin: auto;
-      font-size: clamp(0.9rem, 3vw, 1rem);
+      font-size: 1rem;
       color: #ccc;
-      line-height: 1.8;
     }
 
     .products {
@@ -144,14 +129,13 @@
     .product-card {
       background: #1a1a1a;
       padding: 20px;
-      border-radius: 15px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 10px;
+      transition: transform 0.3s;
       border: 1px solid rgba(241, 196, 15, 0.3);
     }
 
     .product-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(241, 196, 15, 0.4);
     }
 
     .product-card h3 {
@@ -167,56 +151,17 @@
 
     .contact p {
       margin: 8px 0;
-      font-size: clamp(0.9rem, 3vw, 1rem);
+      font-size: 1rem;
     }
 
     footer {
       background: #000;
       text-align: center;
       padding: 15px;
-      font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+      font-size: 0.9rem;
       color: #777;
       border-top: 1px solid rgba(241, 196, 15, 0.3);
     }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      .hero {
-        min-height: 70vh;
-      }
-
-      .products {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .hero-content h2 {
-        font-size: 1.2rem;
-      }
-
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      header p {
-        font-size: 0.8rem;
-      }
-    }
-
   </style>
 </head>
 <body>
